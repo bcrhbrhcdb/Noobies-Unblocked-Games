@@ -1,5 +1,10 @@
 module.exports = {
-  watch: ['src', 'public'], // Watch for changes in src and public folders
-  ignore: [/\.s[ac]ss$/i, /\.tsx?$/i], // Ignore .sass, .scss, .ts, and .tsx files
-  reload: true // Reload the browser automatically when changes are made
-}
+  "files": ["./**/*.{html,htm,css,js}"],
+  "watchOptions": {
+    "ignored": "node_modules"
+  },
+  "server": {
+    "baseDir": "./"
+  },
+  "open": "local" // Add this line to open the browser automatically
+};
